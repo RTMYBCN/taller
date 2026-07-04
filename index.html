@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>RTMY — Taller de Paella</title>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 
@@ -411,6 +412,36 @@ body {
   animation: slideInUp 0.7s 0.2s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
+#fin-qr-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  margin-top: 26px;
+  padding: 28px 40px;
+  background: rgba(255,255,255,0.04);
+  border: 2px solid rgba(255,255,255,0.1);
+  border-radius: 18px;
+  animation: slideInUp 0.7s 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+#fin-qr-block img {
+  width: 220px;
+  height: 220px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  padding: 14px;
+}
+
+.fin-qr-caption {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: rgba(255,255,255,0.85);
+  text-transform: uppercase;
+  text-align: center;
+}
+
 #restart-btn {
   margin-top: 30px;
   padding: 20px 64px;
@@ -425,7 +456,7 @@ body {
   cursor: pointer;
   text-transform: uppercase;
   transition: background 0.2s;
-  animation: slideInUp 0.7s 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: slideInUp 0.7s 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 #restart-btn:hover { background: #C0272D; }
@@ -546,6 +577,12 @@ body {
   <div id="fin-title" class="fin-top"></div>
   <div id="fin-sub"   class="fin-sub"></div>
   <div class="fin-logo">Rice to Meet You · Barcelona</div>
+
+  <div id="fin-qr-block">
+    <img src="data:image/png;base64,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" alt="QR — Recetas del taller">
+    <div id="fin-qr-caption" class="fin-qr-caption"></div>
+  </div>
+
   <button id="restart-btn" onclick="resetToStart()">↩ VOLVER AL INICIO</button>
 </div>
 
@@ -734,7 +771,8 @@ const LBL = {
   pauseSub: { es:'Pulsa ESPACIO o haz clic para continuar', en:'Press SPACE or click to continue', fr:'Appuie sur ESPACE ou clique pour continuer', zh:'按空格键或点击继续', de:'Leertaste drücken oder klicken zum Fortfahren' },
   controls: { es:'ESPACIO: pausar  ·  ← →: navegar', en:'SPACE: pause  ·  ← →: navigate', fr:'ESPACE: pause  ·  ← →: naviguer', zh:'空格键：暂停  ·  ← →：导航', de:'LEERTASTE: Pause  ·  ← →: navigieren' },
   finTitle: { es:'¡BUEN PROVECHO!', en:'ENJOY YOUR MEAL!', fr:'BON APPÉTIT !', zh:'请慢用！', de:'GUTEN APPETIT!' },
-  finSub:   { es:'HABÉIS HECHO UNA PAELLA INCREÍBLE', en:"YOU'VE MADE AN INCREDIBLE PAELLA", fr:'VOUS AVEZ PRÉPARÉ UNE PAELLA INCROYABLE', zh:'你们做了一道超棒的海鲜饭', de:'IHR HABT EINE TOLLE PAELLA GEMACHT' }
+  finSub:   { es:'HABÉIS HECHO UNA PAELLA INCREÍBLE', en:"YOU'VE MADE AN INCREDIBLE PAELLA", fr:'VOUS AVEZ PRÉPARÉ UNE PAELLA INCROYABLE', zh:'你们做了一道超棒的海鲜饭', de:'IHR HABT EINE TOLLE PAELLA GEMACHT' },
+  qrCaption:{ es:'ESCANEA PARA VER TU RECETA', en:'SCAN TO GET YOUR RECIPE', fr:'SCANNEZ POUR VOIR VOTRE RECETTE', zh:'扫码查看你的食谱', de:'SCANNEN FÜR DEIN REZEPT' }
 };
 
 const TOTAL_DUR = STEPS.reduce((s, st) => s + st.dur, 0); // 2550s
@@ -976,6 +1014,10 @@ function showFinish() {
   const t2 = LBL.finTitle[lang2];
   document.getElementById('fin-title').textContent = `${t1} · ${t2}`;
   document.getElementById('fin-sub').textContent   = LBL.finSub[lang1];
+
+  const q1 = LBL.qrCaption[lang1];
+  const q2 = LBL.qrCaption[lang2];
+  document.getElementById('fin-qr-caption').textContent = q1 === q2 ? q1 : `${q1} · ${q2}`;
 }
 
 function resetToStart() {
