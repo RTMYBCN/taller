@@ -47,6 +47,16 @@ tipografías de Google Fonts.
 
 Las teclas `PageUp` / `PageDown` son las de los mandos pasadiapositivas.
 
+### Mando de la televisión
+
+La pantalla de idiomas se maneja entera con el mando: `←` `→` mueven el foco entre
+las banderas, `↓` baja al botón de empezar y `OK` marca o arranca. El foco se ve con
+un borde crema y arranca puesto en la primera bandera.
+
+A 1920×1080 el escenario no lleva ninguna transformación CSS, a propósito: los
+navegadores de televisión calculan la navegación por foco con el rectángulo sin
+transformar, y un `translate` deja los botones fuera de su alcance.
+
 ## Contenido
 
 Los 20 pasos, los 7 idiomas, las duraciones y las ilustraciones son exactamente los del
